@@ -1,0 +1,56 @@
+:root {
+  --main-font:'Poppins', sans-serif;;
+  --main-color:#7cb8eb;
+  --second-color:#4f83d1;
+  --third-color:#4f83d1;
+  --p-color:#717275;
+  --light-bg:#f0f8ff;
+  --fw-light:300;
+  --fw-medium:500;
+  --fw-bold:700;
+  --hover-transition:all .3s linear;
+  --section-padding:80px;
+  --small-section-padding:50px;
+}
+
+/* Start global  */
+*{
+  font-family: var(--main-font);
+}
+a{
+  text-decoration: none;
+  color: var(--main-color);
+  transition: var(--hover-transition);
+}
+h1,h2,h3,h4,h5,h6 {
+  color:var(--dark-color);
+}
+h1 {
+  font-size: 3rem;
+  font-weight: var(--fw-bold);
+  color: #fff;
+}
+h2 {
+  font-size: 2.5rem;
+  font-weight: var(--fw-bold);
+  color: var(--dark-color);
+}
+h3{
+  font-size: 2rem;
+  color: var(--dark-color);
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.2rem;
+}
+h6{
+  font-size: 1rem;
+}
+p {
+  color: var(--p-color);
+  font-weight: var(--fw-light);
+  font-size: 1rem;
+}
+/* End global  */

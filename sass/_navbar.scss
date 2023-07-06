@@ -1,0 +1,41 @@
+header {
+  position: absolute;
+  background-color: transparent;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  transition: var(--hover-transition);
+  .navbar-toggler {
+    box-shadow: none;
+    border: none;
+    color: #fff;
+  }
+  .navbar-brand {
+    .logo {
+      background-color: #fff;
+      width: 80px;
+      height: 80px;
+      padding: 1rem;
+      border-radius: 50%;
+    }
+  }
+  .nav-item {
+    .nav-link {
+      color: #fff;
+      &:hover {
+        color: var(--main-color);
+      }
+    }
+    .nav-btn {
+      background: transparent;
+      padding: 10px 15px;
+      border: 2px solid #fff;
+      border-radius: 30px;
+      &:hover {
+        background-color: var(--main-color);
+        color: #fff;
+      }
+    }
+  }
+}
