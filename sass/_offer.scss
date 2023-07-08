@@ -1,0 +1,45 @@
+.offer {
+  background-color: var(--light-bg);
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 1rem;
+    .offer-img-box {
+      .offer-img-info {
+        background-color: var(--second-color);
+        padding: 0.8rem;
+        color: #fff;
+      }
+    }
+    .offer-info {
+      margin-top: 15px;
+      h4 {
+        a {
+          color: var(--main-color);
+          font-size: 1.8rem;
+          &:hover {
+            color: var(--second-color);
+          }
+        }
+      }
+      .offer-info-links {
+        ul {
+          svg.active {
+            color: var(--second-color);
+          }
+        }
+        .nav-link {
+          background-color: var(--second-color);
+          padding: 10px 15px;
+          border: 2px solid #fff;
+          border-radius: 30px;
+          color: #fff;
+          letter-spacing: 1px;
+          &:hover {
+            background-color: var(--main-color);
+          }
+        }
+      }
+    }
+  }
+}

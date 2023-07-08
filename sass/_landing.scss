@@ -21,13 +21,28 @@
     transform: translate(-50%, -50%);
     padding: 1.5rem;
     text-align: center;
+    width: 100%;
     & .title {
       span {
         color: #e5e50f;
       }
     }
+    .landing-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    @media (max-width: 767px) {
+      & h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem !important;
+      }
+      & .landing-links a {
+        padding: 15px !important;
+        margin: 0.5rem;
+      }
+    }
     .nav-link {
-      display: inline-block;
       background-color: var(--second-color);
       color: #fff;
       margin: 1rem;
@@ -49,5 +64,10 @@
   svg {
     position: absolute;
     bottom: -30px;
+    @media (max-width: 767px) {
+      & {
+        bottom: 0 !important;
+      }
+    }
   }
 }

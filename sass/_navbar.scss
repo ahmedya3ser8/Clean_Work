@@ -6,10 +6,25 @@ header {
   width: 100%;
   z-index: 1;
   transition: var(--hover-transition);
+  @media (max-width: 767px) {
+    & {
+      background-color: #fff !important;
+    }
+  }
+  @media (max-width: 767px) {
+    & .navbar {
+      padding: 0;
+    }
+  }
   .navbar-toggler {
-    box-shadow: none;
+    box-shadow: none !important;
     border: none;
     color: #fff;
+  }
+  @media (max-width: 767px) {
+    .navbar-toggler {
+      color: #000;
+    }
   }
   .navbar-brand {
     .logo {
@@ -21,10 +36,28 @@ header {
     }
   }
   .nav-item {
+    @media (max-width: 767px) {
+      & {
+        width: 100%;
+      }
+    }
     .nav-link {
       color: #fff;
       &:hover {
         color: var(--main-color);
+      }
+      @media (max-width: 767px) {
+        & {
+          color: #000;
+        }
+      }
+      @media (max-width: 767px) {
+        &.nav-mobile {
+          text-align: left;
+          background-color: var(--second-color);
+          width: fit-content;
+          padding: 10px !important;
+        }
       }
     }
     .nav-btn {

@@ -73,10 +73,25 @@ header {
   z-index: 1;
   transition: var(--hover-transition);
 }
+@media (max-width: 767px) {
+  header {
+    background-color: #fff !important;
+  }
+}
+@media (max-width: 767px) {
+  header .navbar {
+    padding: 0;
+  }
+}
 header .navbar-toggler {
-  box-shadow: none;
+  box-shadow: none !important;
   border: none;
   color: #fff;
+}
+@media (max-width: 767px) {
+  header .navbar-toggler {
+    color: #000;
+  }
 }
 header .navbar-brand .logo {
   background-color: #fff;
@@ -85,11 +100,29 @@ header .navbar-brand .logo {
   padding: 1rem;
   border-radius: 50%;
 }
+@media (max-width: 767px) {
+  header .nav-item {
+    width: 100%;
+  }
+}
 header .nav-item .nav-link {
   color: #fff;
 }
 header .nav-item .nav-link:hover {
   color: var(--main-color);
+}
+@media (max-width: 767px) {
+  header .nav-item .nav-link {
+    color: #000;
+  }
+}
+@media (max-width: 767px) {
+  header .nav-item .nav-link.nav-mobile {
+    text-align: left;
+    background-color: var(--second-color);
+    width: fit-content;
+    padding: 10px !important;
+  }
 }
 header .nav-item .nav-btn {
   background: transparent;
@@ -126,12 +159,27 @@ header .nav-item .nav-btn:hover {
   transform: translate(-50%, -50%);
   padding: 1.5rem;
   text-align: center;
+  width: 100%;
 }
 .landing .text-info .title span {
   color: #e5e50f;
 }
+.landing .text-info .landing-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .landing .text-info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem !important;
+  }
+  .landing .text-info .landing-links a {
+    padding: 15px !important;
+    margin: 0.5rem;
+  }
+}
 .landing .text-info .nav-link {
-  display: inline-block;
   background-color: var(--second-color);
   color: #fff;
   margin: 1rem;
@@ -152,4 +200,76 @@ header .nav-item .nav-btn:hover {
 .landing svg {
   position: absolute;
   bottom: -30px;
+}
+@media (max-width: 767px) {
+  .landing svg {
+    bottom: 0 !important;
+  }
+}
+
+.services .service-box p:first-of-type {
+  margin-bottom: 2rem;
+}
+.services .img-box .img-info {
+  background-color: var(--main-color);
+  padding: 25px;
+  max-width: 200px;
+  border-radius: 20px;
+}
+@media (max-width: 767px) {
+  .services .img-box .img-info {
+    padding: 1rem;
+  }
+}
+.services .img-box .img-info h5 {
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 767px) {
+  .services .img-box .img-info h5 {
+    margin-bottom: 0.5rem;
+  }
+}
+.services .img-box .img-info a {
+  color: #fff;
+}
+.services .img-box .img-info a:hover {
+  color: var(--second-color);
+}
+
+.offer {
+  background-color: var(--light-bg);
+}
+.offer .card {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 1rem;
+}
+.offer .card .offer-img-box .offer-img-info {
+  background-color: var(--second-color);
+  padding: 0.8rem;
+  color: #fff;
+}
+.offer .card .offer-info {
+  margin-top: 15px;
+}
+.offer .card .offer-info h4 a {
+  color: var(--main-color);
+  font-size: 1.8rem;
+}
+.offer .card .offer-info h4 a:hover {
+  color: var(--second-color);
+}
+.offer .card .offer-info .offer-info-links ul svg.active {
+  color: var(--second-color);
+}
+.offer .card .offer-info .offer-info-links .nav-link {
+  background-color: var(--second-color);
+  padding: 10px 15px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.offer .card .offer-info .offer-info-links .nav-link:hover {
+  background-color: var(--main-color);
 }/*# sourceMappingURL=main.css.map */
