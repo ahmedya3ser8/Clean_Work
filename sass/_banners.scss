@@ -1,0 +1,20 @@
+.banners {
+  .main-title {
+    padding: 0.8rem 1rem;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: fit-content;
+    box-shadow: 0 0 10px #ddd;
+  }
+  .row {
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 160px;
+      transition: var(--hover-transition);
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

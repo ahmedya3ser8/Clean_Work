@@ -4,11 +4,16 @@
     background-color: #fff;
     padding: 20px;
     margin-bottom: 1rem;
+    border: none;
     .offer-img-box {
+      img {
+        border-radius: 6px;
+      }
       .offer-img-info {
         background-color: var(--second-color);
         padding: 0.8rem;
         color: #fff;
+        border-radius: 6px;
       }
     }
     .offer-info {
