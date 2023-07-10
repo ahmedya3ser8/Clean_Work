@@ -40,6 +40,9 @@ header {
       & {
         width: 100%;
       }
+      &:hover:not(:last-child) {
+        background-color: #f6f6f6;
+      }
     }
     .nav-link {
       color: #fff;
