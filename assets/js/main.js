@@ -6,7 +6,6 @@ setInterval(() => {
   let random = bgArray[Math.floor(Math.random() * bgArray.length)];
   landing.style.backgroundImage = 'url("../../assets/image/' + random +'")';
 }, 3000);
-
 // scroll to top
 let scrollToTop = document.querySelector(".scroll-to-top");
 let btn = document.querySelector(".up");
