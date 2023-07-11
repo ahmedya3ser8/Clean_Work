@@ -4,7 +4,7 @@ let bgArray = ["../../assets/image/slider-01.jpg", "../../assets/image/slider-02
 
 setInterval(() => {
   let random = bgArray[Math.floor(Math.random() * bgArray.length)];
-  landing.style.backgroundImage = 'url("../../assets/image/' + random +'")';
+  landing.style.backgroundImage = `url(${random})`;
 }, 3000);
 // scroll to top
 let scrollToTop = document.querySelector(".scroll-to-top");
