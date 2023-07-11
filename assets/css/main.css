@@ -95,6 +95,16 @@ p {
   top: 2px;
 }
 
+.scroller {
+  background-color: var(--main-color);
+  width: 0;
+  height: 3px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+}
+
 /* End global  */
 header {
   position: absolute;
@@ -172,7 +182,7 @@ header .nav-item .nav-btn:hover {
 
 .landing {
   min-height: 100vh;
-  background-image: url(../../assets/image/slider-01.jpg);
+  background-image: url(../../assets/image/slider-02.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;

@@ -1,16 +1,8 @@
-// Random Background
-let landing = document.querySelector(".landing");
-let bgArray = ["slider-01.jpg", "slider-02.jpg", "slider-03.jpg"];
-
-setInterval(() => {
-  let random = bgArray[Math.floor(Math.random() * bgArray.length)];
-  landing.style.backgroundImage = 'url("../../assets/image/'+ random +'")';
-}, 3000);
 // scroll to top
 let scrollToTop = document.querySelector(".scroll-to-top");
 let btn = document.querySelector(".up");
 
-document.addEventListener("scroll", () => {
+window.addEventListener("scroll", () => {
   if (window.scrollY >= 400) {
     scrollToTop.style.display = "block";
     scrollToTop.style.opactiy = "1";
@@ -26,3 +18,12 @@ btn.onclick = function() {
     behavior: "smooth",
   });
 };
+
+// scroller progress
+let scroller = document.querySelector(".scroller");
+let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+window.addEventListener("scroll", () => {
+  let scrollTop = document.documentElement.scrollTop;
+  scroller.style.width = `${(scrollTop / height) * 100}%`;
+});

@@ -82,4 +82,13 @@ p {
   position: relative;
   top: 2px;
 }
+.scroller {
+  background-color: var(--main-color);
+  width: 0;
+  height: 3px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+}
 /* End global  */
